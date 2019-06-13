@@ -12,8 +12,4 @@ workflows:
   Welcome:
     # Run the welcome/run job in its own container
     jobs:
-      docker:
-        - image: circleci/ruby:2.4.1
-      steps:
-        - checkout
-        - run: echo "A first hello"
+      - run: echo "A first hello"
